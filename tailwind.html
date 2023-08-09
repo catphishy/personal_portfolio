@@ -1,0 +1,218 @@
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'beige': '#F5ECE5',
+                    'purple': '#825589',
+                },
+                fontFamily: {
+                  lekton: ['Lekton', 'sans-serif'],
+                }
+            }
+        }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    @layer components {
+        .navigation-inner {
+            height: 70px;
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+            padding-left: 50px;
+            padding-right: 15px;
+            display: flex;
+        }
+        .navigation-links {
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .nav-link {
+            height: 20px;
+            color: #333;
+            text-decoration: none;
+            overflow: hidden;
+            max-width: 100%;
+            display: inline-block;
+            font-size: 18px;
+        }
+        .btn {
+            color: #825589;
+            text-align: center;
+            border:  solid 3px #825589;
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 15px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            transition: all .2s cubic-bezier(.645, .045, .355, 1);
+            display: flex;
+            height: 45px;
+            font-weight: 600;
+        }
+        #about, #projects, #contacts {
+          padding-top: 70px;
+        }
+    }
+  </style>
+</head>
+<body class="flex flex-col bg-beige font-lekton font-medium overflow-x-hidden">
+  
+  <div class="basis-full sticky top-0 z-50 w-full bg-beige">
+    <div class="navigation-inner flex justify-evenly mx-auto">
+      <div class="navigation-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contacts" class="nav-link">Contacts</a>
+        <a href="files/JeminaSy_Resume_0823.pdf" target="_blank" class="nav-link btn">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-14 pt-0 max-w-screen-md mx-auto">
+    <!-- About -->
+    <section id="about">
+      <p class="text-2xl pb-3 font-semibold">Jemina Sy</p>
+      <p class="whitespace-pre-line">Hi, I'm Jem. I am a back-end focused web developer, and I have recently graduated with a Bachelor of Science in Information Systems, majoring in Service Management. 
+        
+        I enjoy building solutions that not only provide optimal performance but also bring value to users' experiences.                     
+        
+        Below are some of the projects I have done during my two years of coding experience.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <p class="text-lg pb-3 font-semibold">Projects</p>
+      <!-- Attendance and Task System -->
+      <div class="flex flex-col md:flex-row pb-5">
+        <div class="basis-6/12 aspect-square">
+          <img src="img/megaproductivity.png" class="relative object-cover w-full h-full overflow-hidden">
+        </div>
+        <div class="basis-6/12 p-4">
+          <p class="font-semibold">Attendance & Task Monitoring System - MegaMobile</p>
+          <p class="pt-3 pb-3">
+            A web app requirement for my internship.
+            Collaborated with a group of interns, and participated in the design and the development of front-end to back-end.
+          </p>
+          <span class="text-purple font-semibold">CodeIgniter | Bootstrap</span>
+        </div>
+      </div>
+      <!-- Color Game -->
+      <div class="flex flex-col md:flex-row pb-5">
+        <div class="basis-6/12 aspect-square">
+          <img src="img/colorgame.png" class="relative object-cover w-full h-full overflow-hidden">
+        </div>
+        <div class="basis-6/12 p-4">
+          <p class="font-semibold">Color Game - MegaMobile</p>
+          <p class="pt-3 pb-3">
+            A web app an intern and I developed during my internship.
+            This web app was developed for the company's client to boost customer engagement.
+          </p>
+          <span class="text-purple font-semibold">CodeIgniter | Bootstrap | JavaSript</span>
+        </div>
+      </div>
+      <!-- Rick -->
+      <div class="flex flex-col md:flex-row pb-5">
+        <div class="basis-6/12 aspect-square">
+          <img src="img/rick.png" alt="Image" class="relative object-cover w-full h-full overflow-hidden">
+        </div>
+        <div class="basis-6/12 p-4">
+          <p class="font-semibold">Request. Inquiries. Concerns. Komersiyo. (RICK) Ticketing System</p>
+          <p class="pt-3 pb-3">
+            Our capstone project for the UST College of Commerce and Business Administration.
+            I developed the front-end and back-end of the application.
+          </p>
+          <span class="text-purple font-semibold">Laravel | TailwindCSS | Blade</span>
+        </div>
+      </div>
+      <!-- COF -->
+      <div class="flex flex-col md:flex-row">
+        <div class="basis-6/12 aspect-square">
+          <img src="img/cof.png" class="relative object-cover w-full h-full overflow-hidden">
+        </div>
+        <div class="basis-6/12 p-4">
+          <p class="font-semibold">Ordering System for Cakes Over Flowers</p>
+          <p class="pt-3 pb-3">
+            A group project for our back-end programming course.
+            I developed the back-end of the web application.
+          </p>
+          <span class="text-purple font-semibold">MongoDB | Express.js | React | Node.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts">
+      <p class="text-lg pb-3 font-semibold">Contacts</p>
+      <div class="flex flex-col md:flex-row pb-5">
+        <div class="basis-2/12">
+          <p>Email</p>
+        </div>
+        <div class="basis-10/12">
+          <button id="copyButton" onclick="copyText()" class="text-purple font-semibold">jemina.c.sy@gmail.com</button>
+          <span id="copyMessage" class="hidden">Copied!</span>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row pb-5">
+        <div class="basis-2/12">
+          <p>GitHub</p>
+        </div>
+        <div class="basis-10/12">
+          <a href="https://github.com/jeminasyy" target="_blank" class="text-purple font-semibold">@jeminasyy <i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+      <div class="flex flex-col md:flex-row pb-5">
+        <div class="basis-2/12">
+          <p>LinkedIn</p>
+        </div>
+        <div class="basis-10/12">
+          <a href="https://www.linkedin.com/in/jemina-sy-64544920a/" target="_blank" class="text-purple font-semibold">Jemina Sy <i class='bx bx-link-external'></i></a>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+<script>
+  function copyText () {
+      const textToCopy = "jemina.c.sy@gmail.com";
+      copyTextToClipboard(textToCopy);
+      displayCopyMessage();
+  }
+
+  function copyTextToClipboard(text) {
+      const textarea = document.createElement("textarea");
+      textarea.value = text;
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand("copy");
+      document.body.removeChild(textarea);
+  }
+
+  function displayCopyMessage() {
+      copyMessage.classList.remove("hidden");
+      setTimeout(function () {
+          copyMessage.classList.add("hidden");
+      }, 1500);
+  }
+</script>
+</html>
