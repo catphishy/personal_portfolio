@@ -23,7 +23,7 @@ function handleRoute() {
       loadTemplate("rick.html");
       break;
     default:
-      loadTemplate("home.html");
+      loadTemplate("rick.html");
       break;
   }
 }
