@@ -20,7 +20,7 @@ function handleRoute() {
     //   loadTemplate("page/home.html");
     //   break;
     case "/project/rick":
-      loadTemplate("/project/rick.html");
+      loadTemplate("/projects/rick.html");
       break;
     default:
       loadTemplate("home.html");
