@@ -18,7 +18,7 @@ function loadContent(url) {
   if (url.includes("rick")) {
     loadContentFromFile("/projects/rick.html");
   } else {
-    loadContentFromFile("home.html");
+    loadContentFromFile("/projects/rick.html");
   }
 }
 
