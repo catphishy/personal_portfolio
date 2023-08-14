@@ -1,0 +1,101 @@
+<!doctype html>
+<html style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="img/code-alt-regular-24 (1).png" type="image/svg+xml">
+  <title>Jemina Sy</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lekton:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+  <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                colors: {
+                    'beige': '#F5ECE5',
+                    'purple': '#825589',
+                    'bright-purple': '#9e74a4',
+                    'dark-purple': '#624467',
+                },
+                fontFamily: {
+                  lekton: ['Lekton', 'sans-serif'],
+                }
+            }
+        }
+    }
+  </script>
+  <style type="text/tailwindcss">
+    @layer utilities {
+      .content-auto {
+        content-visibility: auto;
+      }
+    }
+    @layer components {
+        .navigation-inner {
+            height: 70px;
+            grid-column-gap: 30px;
+            grid-row-gap: 20px;
+            padding-left: 50px;
+            padding-right: 15px;
+            display: flex;
+        }
+        .navigation-links {
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        .nav-link {
+            height: 20px;
+            color: #333;
+            text-decoration: none;
+            overflow: hidden;
+            max-width: 100%;
+            display: inline-block;
+            font-size: 18px;
+        }
+        .btn {
+            color: #825589;
+            text-align: center;
+            border:  solid 3px #825589;
+            border-radius: 8px;
+            justify-content: center;
+            align-items: center;
+            padding: 4px 15px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 20px;
+            transition: all .2s cubic-bezier(.645, .045, .355, 1);
+            display: flex;
+            height: 45px;
+            font-weight: 600;
+        }
+        #about, #projects, #contacts {
+          padding-top: 70px;
+        }
+    }
+  </style>
+</head>
+<body class="flex flex-col bg-beige font-lekton font-medium overflow-x-hidden">
+  
+  <div class="basis-full sticky top-0 z-40 w-full bg-beige">
+    <div class="navigation-inner flex justify-evenly mx-auto">
+      <div class="navigation-links">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contacts" class="nav-link">Contacts</a>
+        <a href="files/JeminaSy_Resume_0723.pdf" target="_blank" class="nav-link btn">Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="contentContainer" class="p-14 pt-0 max-w-screen-md mx-auto"></div>
+  
+</body>
+
+<script src="js/copyEmail.js"></script>
+<script src="js/openModal.js"></script>
+<script src="js/script.js"></script>
+</html>
