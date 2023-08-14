@@ -4,7 +4,9 @@ const currentURL = window.location.href;
 // Function to load content from a file and set it as innerHTML
 async function loadContentFromFile(filePath) {
   try {
-    const response = await fetch(`../page/${filePath}`);
+    const response = await fetch(filePath);
+    // const response = await fetch(`../page/${filePath}`);
+
     const content = await response.text();
     contentContainer.innerHTML = content;
   } catch (error) {
@@ -21,7 +23,7 @@ function loadContent(url) {
   } else if (url.includes("contact")) {
     loadContentFromFile("contact.html");
   } else {
-    loadContentFromFile("home.html");
+    loadContentFromFile("../page/home.html");
   }
 }
 
