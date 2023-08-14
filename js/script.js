@@ -4,7 +4,9 @@ const currentURL = window.location.href;
 // Function to load content from a file and set it as innerHTML
 async function loadContentFromFile(filePath) {
   try {
-    const response = await fetch(`../page/${filePath}`);
+    const baseURL = new URL("/", window.location.origin);
+    const response = await fetch(new URL(`page/${filePath}`, baseURL));
+    // const response = await fetch(`/page/${filePath}`);
 
     const content = await response.text();
     contentContainer.innerHTML = content;
