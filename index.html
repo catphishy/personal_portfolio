@@ -7,12 +7,21 @@
   <title>Jemina Sy</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <script src="js/layout.js"></script>
-  <script src="components/navbar.js"></script>
+  <!-- <script src="components/navbar.js"></script> -->
   <link rel="stylesheet" href="css/layout.css">
 </head>
 <body class="flex flex-col bg-beige font-lekton font-medium overflow-x-hidden">
   
-  <app-navbar></app-navbar>
+  <div class="basis-full sticky top-0 z-40 w-full bg-beige">
+    <div class="navigation-inner flex justify-evenly mx-auto">
+        <div class="navigation-links">
+            <a href="#about" class="nav-link">About</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#contacts" class="nav-link">Contacts</a>
+            <a href="files/JeminaSy_Resume_0723.pdf" target="_blank" class="nav-link btn">Resume</a>
+        </div>
+    </div>
+  </div>
 
   <div class="p-14 pt-0 max-w-screen-md mx-auto">
     <!-- About -->
