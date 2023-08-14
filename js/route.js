@@ -16,15 +16,15 @@ function handleRoute() {
   const path = window.location.pathname;
 
   switch (path) {
-    // case "/":
-    //   loadTemplate("page/home.html");
-    //   break;
-    case "project/rick":
-      loadTemplate("rick.html");
-      break;
-    default:
+    case "/":
       loadTemplate("home.html");
       break;
+    case "/project/rick":
+      loadTemplate("rick.html");
+      break;
+    // default:
+    //   loadTemplate("home.html");
+    //   break;
   }
 }
 
