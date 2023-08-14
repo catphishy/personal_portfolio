@@ -15,8 +15,8 @@ async function loadContentFromFile(filePath) {
 
 // Function to load different content based on the URL
 function loadContent(url) {
-  if (url.includes("/rick")) {
-    loadContentFromFile("/projects/rick.html");
+  if (url.includes("/project/rick")) {
+    loadContentFromFile("/projects/index.html");
   } else {
     loadContentFromFile("home.html");
   }
