@@ -19,11 +19,11 @@ function handleRoute() {
     // case "/":
     //   loadTemplate("page/home.html");
     //   break;
-    case "/project/rick":
+    case "project/rick":
       loadTemplate("rick.html");
       break;
     default:
-      loadTemplate("rick.html");
+      loadTemplate("home.html");
       break;
   }
 }
