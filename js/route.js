@@ -3,7 +3,7 @@ const appContainer = document.getElementById("app");
 // Function to load and display content from a template file
 async function loadTemplate(filePath) {
   try {
-    const response = await fetch(`../page/${filePath}`);
+    const response = await fetch(filePath);
     const content = await response.text();
     appContainer.innerHTML = content;
   } catch (error) {
