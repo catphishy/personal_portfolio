@@ -8,7 +8,8 @@ tailwind.config = {
                 'dark-purple': '#624467',
                 'dark-blue': '#1A355B',
                 // 'bright-purple': '#BF40BF',
-                'black': '#091A32',
+                'blue': '#091A32',
+                'neutral': '#e5e5e5',
             },
             fontFamily: {
               lekton: ['Lekton', 'sans-serif'],
