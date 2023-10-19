@@ -8,6 +8,7 @@ tailwind.config = {
                 'dark-purple': '#624467',
                 'dark-blue': '#1A355B',
                 // 'bright-purple': '#BF40BF',
+                'purple-950': '#3b0764',
                 'blue': '#091A32',
                 'neutral': '#e5e5e5',
             },
